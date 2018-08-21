@@ -1,0 +1,11 @@
+#Internal package file, do not edit.
+#Tue Aug 21 10:39:25 BRT 2018
+1.base=D\:\\TCC\\TTNMapper\\ttnmapper_android_v2\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\56
+0.baseType=DIRECTORY
+1.baseType=DIRECTORY
+count=2
+1.set=DEX
+0.path=crashlytics-build.properties
+0.set=ASSET
+0.base=D\:\\TCC\\TTNMapper\\ttnmapper_android_v2\\app\\build\\intermediates\\assets\\debug
+1.path=classes.dex

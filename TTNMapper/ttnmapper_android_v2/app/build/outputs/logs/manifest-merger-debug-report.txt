@@ -1,0 +1,421 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:2:1-128:12
+INJECTED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:2:1-128:12
+INJECTED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:2:1-128:12
+INJECTED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:2:1-128:12
+MERGED from [com.android.support:design:27.1.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\design-27.1.0.aar\1ad750f32f145a96facbb6fc8416290b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.1.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.0.aar\73012fcbb95bcd557d9b549f8d39167b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-gcm:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-gcm-11.8.0.aar\274e5547e7674129945abba84855c696\AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\d47fb15f4b44e14aee7e0d4cf867fc97\AndroidManifest.xml:17:1-32:12
+MERGED from [com.google.android.gms:play-services-location:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-location-11.8.0.aar\76875bcd0155c51cddc7ca6cacb2a426\AndroidManifest.xml:2:1-9:12
+MERGED from [com.github.clans:fab:1.6.4] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\fab-1.6.4.aar\6d6efa1fcee6bf12e4610b49323fd708\AndroidManifest.xml:2:1-14:12
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.6.7] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\crashlytics-2.6.7.aar\332088232d77644d068c90d7bb5b1667\AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.android.gms:play-services-iid:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-iid-11.8.0.aar\8115b96d4d0020e5a062f17fce05fcfc\AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\f5c2f9549997f88496deb61431241ed5\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\d9afedd2e8483bc27182caf8f33c5924\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\045568e164ed3017ef518009ae8603d4\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:27.1.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.0.aar\2b5cde302a7149b4a8ba99a1ab9b832e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\42e468d35a5ac0156babf5486bb9bfd6\AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.felHR85:UsbSerial:4.5.2] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\UsbSerial-4.5.2.aar\60368e638bd3366b351dc7978138ae1a\AndroidManifest.xml:2:1-10:12
+MERGED from [com.android.support:recyclerview-v7:27.1.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.0.aar\63baa4a7815440c6025c30766af3f865\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.1.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\transition-27.1.0.aar\67b98e64d60afc5dbac9d03508d4db2d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.0.aar\a5f1d1dab4a012892b1bab322df828c7\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.0.aar\2fa5573517dd0e34af54a531026afa4a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.0.aar\2298a842775daee450b8232c8e0319e0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.0.aar\609953c9e9ca8a3deb0ebc0e616f20eb\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.0.aar\73e5760267b1d00709f0c3bef6f10e50\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.0.aar\1bf35822769b92abb43e4fa1bc3dc32d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.0.aar\8dcfba7d0089d91844a4fa5e5f03d8cd\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-gcm-license:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-gcm-license-11.8.0.aar\e055fa72f67662fe070fa55e99e8dd87\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-maps-license-11.8.0.aar\48a082bbd24fa3b29950a8df80d5c90b\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-location-license:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-location-license-11.8.0.aar\ac6f0f4767d3c920d627eea6f1ce867d\AndroidManifest.xml:2:1-6:12
+MERGED from [com.crashlytics.sdk.android:beta:1.2.4] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\beta-1.2.4.aar\1f2be7d856223dede767e3e4598fa337\AndroidManifest.xml:2:1-13:12
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.3.16] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\crashlytics-core-2.3.16.aar\c5cde5dd4281e363237b01567d114f46\AndroidManifest.xml:45:1-56:12
+MERGED from [com.crashlytics.sdk.android:answers:1.3.12] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\answers-1.3.12.aar\407538af9014ea689c286eca83ddfbbf\AndroidManifest.xml:2:1-13:12
+MERGED from [io.fabric.sdk.android:fabric:1.3.16] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\fabric-1.3.16.aar\cec0dbb562a133217ce875f047c8ef87\AndroidManifest.xml:22:1-33:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\2432f0c7fe0c0f39d087976f94800183\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\c7313c5551daf09dbbe3d4c40aea4dbe\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\4faff0875c5b179ed320fc7d47235973\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\6af1fd4df387c877f387d55198c6ff4e\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-iid-license:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-iid-license-11.8.0.aar\7fd91a5388c6f8676728ee661cd511b7\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\c0c215e37ed89f359e5385417b075d2b\AndroidManifest.xml:2:1-6:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\96299bb90e1981ccb04d4257e7a9558b\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\cf17b80a80df91fb7bfaca8597ef0e3e\AndroidManifest.xml:17:1-22:12
+INJECTED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:2:1-128:12
+INJECTED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:2:1-128:12
+INJECTED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:2:1-128:12
+	package
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:3:5-40
+		INJECTED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml
+		INJECTED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:2:1-128:12
+		INJECTED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:2:1-128:12
+		INJECTED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:10:5-79
+	android:name
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:10:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:11:5-81
+	android:name
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:11:22-78
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:12:5-81
+	android:name
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:12:22-78
+uses-permission#android.permission.WAKE_LOCK
+ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:15:5-68
+	android:name
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:15:22-65
+uses-permission#android.permission.INTERNET
+ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:16:5-67
+MERGED from [com.google.android.gms:play-services-gcm:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-gcm-11.8.0.aar\274e5547e7674129945abba84855c696\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-gcm:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-gcm-11.8.0.aar\274e5547e7674129945abba84855c696\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\d47fb15f4b44e14aee7e0d4cf867fc97\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\d47fb15f4b44e14aee7e0d4cf867fc97\AndroidManifest.xml:24:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.6.7] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\crashlytics-2.6.7.aar\332088232d77644d068c90d7bb5b1667\AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.6.7] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\crashlytics-2.6.7.aar\332088232d77644d068c90d7bb5b1667\AndroidManifest.xml:9:5-67
+MERGED from [com.google.android.gms:play-services-iid:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-iid-11.8.0.aar\8115b96d4d0020e5a062f17fce05fcfc\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-iid:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-iid-11.8.0.aar\8115b96d4d0020e5a062f17fce05fcfc\AndroidManifest.xml:24:5-67
+MERGED from [com.crashlytics.sdk.android:beta:1.2.4] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\beta-1.2.4.aar\1f2be7d856223dede767e3e4598fa337\AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:beta:1.2.4] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\beta-1.2.4.aar\1f2be7d856223dede767e3e4598fa337\AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.3.16] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\crashlytics-core-2.3.16.aar\c5cde5dd4281e363237b01567d114f46\AndroidManifest.xml:52:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.3.16] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\crashlytics-core-2.3.16.aar\c5cde5dd4281e363237b01567d114f46\AndroidManifest.xml:52:5-67
+MERGED from [com.crashlytics.sdk.android:answers:1.3.12] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\answers-1.3.12.aar\407538af9014ea689c286eca83ddfbbf\AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:answers:1.3.12] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\answers-1.3.12.aar\407538af9014ea689c286eca83ddfbbf\AndroidManifest.xml:9:5-67
+MERGED from [io.fabric.sdk.android:fabric:1.3.16] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\fabric-1.3.16.aar\cec0dbb562a133217ce875f047c8ef87\AndroidManifest.xml:29:5-67
+MERGED from [io.fabric.sdk.android:fabric:1.3.16] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\fabric-1.3.16.aar\cec0dbb562a133217ce875f047c8ef87\AndroidManifest.xml:29:5-67
+	android:name
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:16:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:17:5-79
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\d47fb15f4b44e14aee7e0d4cf867fc97\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\d47fb15f4b44e14aee7e0d4cf867fc97\AndroidManifest.xml:23:5-79
+	android:name
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:17:22-76
+uses-feature#android.hardware.location.gps
+ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:20:5-66
+	android:name
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:20:19-63
+application
+ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:22:5-126:19
+MERGED from [com.google.android.gms:play-services-gcm:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-gcm-11.8.0.aar\274e5547e7674129945abba84855c696\AndroidManifest.xml:26:5-20
+MERGED from [com.google.android.gms:play-services-gcm:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-gcm-11.8.0.aar\274e5547e7674129945abba84855c696\AndroidManifest.xml:26:5-20
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\d47fb15f4b44e14aee7e0d4cf867fc97\AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\d47fb15f4b44e14aee7e0d4cf867fc97\AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-location:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-location-11.8.0.aar\76875bcd0155c51cddc7ca6cacb2a426\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-location-11.8.0.aar\76875bcd0155c51cddc7ca6cacb2a426\AndroidManifest.xml:7:5-20
+MERGED from [com.github.clans:fab:1.6.4] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\fab-1.6.4.aar\6d6efa1fcee6bf12e4610b49323fd708\AndroidManifest.xml:12:5-20
+MERGED from [com.github.clans:fab:1.6.4] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\fab-1.6.4.aar\6d6efa1fcee6bf12e4610b49323fd708\AndroidManifest.xml:12:5-20
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.6.7] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\crashlytics-2.6.7.aar\332088232d77644d068c90d7bb5b1667\AndroidManifest.xml:11:5-20
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.6.7] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\crashlytics-2.6.7.aar\332088232d77644d068c90d7bb5b1667\AndroidManifest.xml:11:5-20
+MERGED from [com.google.android.gms:play-services-iid:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-iid-11.8.0.aar\8115b96d4d0020e5a062f17fce05fcfc\AndroidManifest.xml:26:5-20
+MERGED from [com.google.android.gms:play-services-iid:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-iid-11.8.0.aar\8115b96d4d0020e5a062f17fce05fcfc\AndroidManifest.xml:26:5-20
+MERGED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\f5c2f9549997f88496deb61431241ed5\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\f5c2f9549997f88496deb61431241ed5\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\d9afedd2e8483bc27182caf8f33c5924\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\d9afedd2e8483bc27182caf8f33c5924\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\045568e164ed3017ef518009ae8603d4\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\045568e164ed3017ef518009ae8603d4\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\42e468d35a5ac0156babf5486bb9bfd6\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\42e468d35a5ac0156babf5486bb9bfd6\AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-gcm-license:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-gcm-license-11.8.0.aar\e055fa72f67662fe070fa55e99e8dd87\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-gcm-license:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-gcm-license-11.8.0.aar\e055fa72f67662fe070fa55e99e8dd87\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-maps-license-11.8.0.aar\48a082bbd24fa3b29950a8df80d5c90b\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-maps-license-11.8.0.aar\48a082bbd24fa3b29950a8df80d5c90b\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-location-license:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-location-license-11.8.0.aar\ac6f0f4767d3c920d627eea6f1ce867d\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-location-license:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-location-license-11.8.0.aar\ac6f0f4767d3c920d627eea6f1ce867d\AndroidManifest.xml:5:5-20
+MERGED from [com.crashlytics.sdk.android:beta:1.2.4] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\beta-1.2.4.aar\1f2be7d856223dede767e3e4598fa337\AndroidManifest.xml:11:5-20
+MERGED from [com.crashlytics.sdk.android:beta:1.2.4] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\beta-1.2.4.aar\1f2be7d856223dede767e3e4598fa337\AndroidManifest.xml:11:5-20
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.3.16] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\crashlytics-core-2.3.16.aar\c5cde5dd4281e363237b01567d114f46\AndroidManifest.xml:54:5-20
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.3.16] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\crashlytics-core-2.3.16.aar\c5cde5dd4281e363237b01567d114f46\AndroidManifest.xml:54:5-20
+MERGED from [com.crashlytics.sdk.android:answers:1.3.12] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\answers-1.3.12.aar\407538af9014ea689c286eca83ddfbbf\AndroidManifest.xml:11:5-20
+MERGED from [com.crashlytics.sdk.android:answers:1.3.12] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\answers-1.3.12.aar\407538af9014ea689c286eca83ddfbbf\AndroidManifest.xml:11:5-20
+MERGED from [io.fabric.sdk.android:fabric:1.3.16] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\fabric-1.3.16.aar\cec0dbb562a133217ce875f047c8ef87\AndroidManifest.xml:31:5-20
+MERGED from [io.fabric.sdk.android:fabric:1.3.16] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\fabric-1.3.16.aar\cec0dbb562a133217ce875f047c8ef87\AndroidManifest.xml:31:5-20
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\4faff0875c5b179ed320fc7d47235973\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\4faff0875c5b179ed320fc7d47235973\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\6af1fd4df387c877f387d55198c6ff4e\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\6af1fd4df387c877f387d55198c6ff4e\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-iid-license:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-iid-license-11.8.0.aar\7fd91a5388c6f8676728ee661cd511b7\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-iid-license:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-iid-license-11.8.0.aar\7fd91a5388c6f8676728ee661cd511b7\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\c0c215e37ed89f359e5385417b075d2b\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\c0c215e37ed89f359e5385417b075d2b\AndroidManifest.xml:5:5-20
+	android:supportsRtl
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:27:9-35
+	android:label
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:26:9-41
+	android:icon
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:25:9-43
+	android:allowBackup
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:24:9-35
+	android:theme
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:28:9-40
+	android:name
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:23:9-38
+service#org.eclipse.paho.android.service.MqttService
+ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:31:9-79
+	android:name
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:31:18-77
+meta-data#com.google.android.geo.API_KEY
+ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:40:9-42:55
+	android:value
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:42:13-52
+	android:name
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:41:13-58
+meta-data#com.google.android.gms.version
+ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:43:9-45:69
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\045568e164ed3017ef518009ae8603d4\AndroidManifest.xml:23:9-25:69
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\045568e164ed3017ef518009ae8603d4\AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:45:13-66
+	android:name
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:44:13-58
+meta-data#android.max_aspect
+ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:48:9-50:35
+	android:value
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:50:13-32
+	android:name
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:49:13-46
+service#org.ttnmapper.ttnmapperv2.TTNMapperService
+ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:52:9-54:40
+	android:exported
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:54:13-37
+	android:name
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:53:13-45
+activity#org.ttnmapper.ttnmapperv2.MapsActivity
+ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:56:9-79:20
+	android:label
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:58:13-39
+	android:launchMode
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:59:13-44
+	android:name
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:57:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:60:13-65:29
+action#android.intent.action.MAIN
+ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:61:17-69
+	android:name
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:61:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:63:17-77
+	android:name
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:63:27-74
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:app.ttnmapper.org+data:host:app.ttnmapper.org+data:scheme:http+data:scheme:https
+ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:66:13-78:29
+data
+ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:67:17-69:46
+	android:host
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:68:21-53
+	android:scheme
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:69:21-43
+action#android.intent.action.VIEW
+ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:74:17-69
+	android:name
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:74:25-66
+category#android.intent.category.BROWSABLE
+ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:76:17-78
+	android:name
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:76:27-75
+category#android.intent.category.DEFAULT
+ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:77:17-76
+	android:name
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:77:27-73
+activity#org.ttnmapper.ttnmapperv2.LinkDevice
+ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:80:9-82:43
+	android:label
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:82:13-40
+	android:name
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:81:13-39
+activity#org.ttnmapper.ttnmapperv2.LinkDeviceManually
+ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:83:9-85:52
+	android:label
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:85:13-49
+	android:name
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:84:13-47
+activity#org.ttnmapper.ttnmapperv2.LogInToTTN
+ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:86:9-88:47
+	android:label
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:88:13-44
+	android:name
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:87:13-39
+activity#org.ttnmapper.ttnmapperv2.ApplicationList
+ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:89:9-91:53
+	android:label
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:91:13-50
+	android:name
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:90:13-44
+activity#org.ttnmapper.ttnmapperv2.DevicesList
+ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:92:9-94:47
+	android:label
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:94:13-44
+	android:name
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:93:13-40
+activity#org.ttnmapper.ttnmapperv2.SettingsActivity
+ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:95:9-97:40
+	android:label
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:97:13-37
+	android:name
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:96:13-45
+activity#org.ttnmapper.ttnmapperv2.CheckPermissions
+ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:98:9-100:43
+	android:label
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:100:13-40
+	android:name
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:99:13-45
+meta-data#io.fabric.ApiKey
+ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:102:9-104:72
+	android:value
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:104:13-69
+	android:name
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:103:13-44
+activity#org.ttnmapper.ttnmapperv2.TerminalActivity
+ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:106:9-125:20
+	android:screenOrientation
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:108:13-49
+	android:label
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:107:13-37
+	android:name
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:106:19-51
+intent-filter#action:name:android.hardware.usb.action.USB_DEVICE_ATTACHED
+ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:109:13-111:29
+action#android.hardware.usb.action.USB_DEVICE_ATTACHED
+ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:110:17-89
+	android:name
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:110:25-87
+intent-filter#action:name:android.hardware.usb.action.USB_DEVICE_DETACHED
+ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:113:13-115:29
+action#android.hardware.usb.action.USB_DEVICE_DETACHED
+ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:114:17-90
+	android:name
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:114:25-87
+meta-data#android.hardware.usb.action.USB_DEVICE_ATTACHED
+ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:117:13-118:56
+	android:resource
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:118:17-54
+	android:name
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:117:24-86
+meta-data#android.hardware.usb.action.USB_DEVICE_DETACHED
+ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:120:13-122:57
+	android:resource
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:122:17-54
+	android:name
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml:120:24-103
+uses-sdk
+INJECTED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml
+INJECTED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:design:27.1.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\design-27.1.0.aar\1ad750f32f145a96facbb6fc8416290b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\design-27.1.0.aar\1ad750f32f145a96facbb6fc8416290b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.0.aar\73012fcbb95bcd557d9b549f8d39167b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.0.aar\73012fcbb95bcd557d9b549f8d39167b\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-gcm:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-gcm-11.8.0.aar\274e5547e7674129945abba84855c696\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-gcm:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-gcm-11.8.0.aar\274e5547e7674129945abba84855c696\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\d47fb15f4b44e14aee7e0d4cf867fc97\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\d47fb15f4b44e14aee7e0d4cf867fc97\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-location:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-location-11.8.0.aar\76875bcd0155c51cddc7ca6cacb2a426\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-location-11.8.0.aar\76875bcd0155c51cddc7ca6cacb2a426\AndroidManifest.xml:5:5-44
+MERGED from [com.github.clans:fab:1.6.4] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\fab-1.6.4.aar\6d6efa1fcee6bf12e4610b49323fd708\AndroidManifest.xml:8:5-10:41
+MERGED from [com.github.clans:fab:1.6.4] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\fab-1.6.4.aar\6d6efa1fcee6bf12e4610b49323fd708\AndroidManifest.xml:8:5-10:41
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.6.7] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\crashlytics-2.6.7.aar\332088232d77644d068c90d7bb5b1667\AndroidManifest.xml:7:5-43
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.6.7] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\crashlytics-2.6.7.aar\332088232d77644d068c90d7bb5b1667\AndroidManifest.xml:7:5-43
+MERGED from [com.google.android.gms:play-services-iid:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-iid-11.8.0.aar\8115b96d4d0020e5a062f17fce05fcfc\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-iid:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-iid-11.8.0.aar\8115b96d4d0020e5a062f17fce05fcfc\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\f5c2f9549997f88496deb61431241ed5\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\f5c2f9549997f88496deb61431241ed5\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\d9afedd2e8483bc27182caf8f33c5924\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\d9afedd2e8483bc27182caf8f33c5924\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\045568e164ed3017ef518009ae8603d4\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\045568e164ed3017ef518009ae8603d4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.0.aar\2b5cde302a7149b4a8ba99a1ab9b832e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.0.aar\2b5cde302a7149b4a8ba99a1ab9b832e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\42e468d35a5ac0156babf5486bb9bfd6\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\42e468d35a5ac0156babf5486bb9bfd6\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.felHR85:UsbSerial:4.5.2] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\UsbSerial-4.5.2.aar\60368e638bd3366b351dc7978138ae1a\AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.felHR85:UsbSerial:4.5.2] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\UsbSerial-4.5.2.aar\60368e638bd3366b351dc7978138ae1a\AndroidManifest.xml:6:5-8:41
+MERGED from [com.android.support:recyclerview-v7:27.1.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.0.aar\63baa4a7815440c6025c30766af3f865\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.0.aar\63baa4a7815440c6025c30766af3f865\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\transition-27.1.0.aar\67b98e64d60afc5dbac9d03508d4db2d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\transition-27.1.0.aar\67b98e64d60afc5dbac9d03508d4db2d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.0.aar\a5f1d1dab4a012892b1bab322df828c7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.0.aar\a5f1d1dab4a012892b1bab322df828c7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.0.aar\2fa5573517dd0e34af54a531026afa4a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.0.aar\2fa5573517dd0e34af54a531026afa4a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.0.aar\2298a842775daee450b8232c8e0319e0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.0.aar\2298a842775daee450b8232c8e0319e0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.0.aar\609953c9e9ca8a3deb0ebc0e616f20eb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.0.aar\609953c9e9ca8a3deb0ebc0e616f20eb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.0.aar\73e5760267b1d00709f0c3bef6f10e50\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.0.aar\73e5760267b1d00709f0c3bef6f10e50\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.0.aar\1bf35822769b92abb43e4fa1bc3dc32d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.0.aar\1bf35822769b92abb43e4fa1bc3dc32d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.0.aar\8dcfba7d0089d91844a4fa5e5f03d8cd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.0.aar\8dcfba7d0089d91844a4fa5e5f03d8cd\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-gcm-license:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-gcm-license-11.8.0.aar\e055fa72f67662fe070fa55e99e8dd87\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-gcm-license:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-gcm-license-11.8.0.aar\e055fa72f67662fe070fa55e99e8dd87\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-maps-license-11.8.0.aar\48a082bbd24fa3b29950a8df80d5c90b\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-maps-license-11.8.0.aar\48a082bbd24fa3b29950a8df80d5c90b\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-location-license:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-location-license-11.8.0.aar\ac6f0f4767d3c920d627eea6f1ce867d\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-location-license:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-location-license-11.8.0.aar\ac6f0f4767d3c920d627eea6f1ce867d\AndroidManifest.xml:4:5-43
+MERGED from [com.crashlytics.sdk.android:beta:1.2.4] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\beta-1.2.4.aar\1f2be7d856223dede767e3e4598fa337\AndroidManifest.xml:7:5-43
+MERGED from [com.crashlytics.sdk.android:beta:1.2.4] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\beta-1.2.4.aar\1f2be7d856223dede767e3e4598fa337\AndroidManifest.xml:7:5-43
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.3.16] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\crashlytics-core-2.3.16.aar\c5cde5dd4281e363237b01567d114f46\AndroidManifest.xml:50:5-43
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.3.16] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\crashlytics-core-2.3.16.aar\c5cde5dd4281e363237b01567d114f46\AndroidManifest.xml:50:5-43
+MERGED from [com.crashlytics.sdk.android:answers:1.3.12] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\answers-1.3.12.aar\407538af9014ea689c286eca83ddfbbf\AndroidManifest.xml:7:5-43
+MERGED from [com.crashlytics.sdk.android:answers:1.3.12] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\answers-1.3.12.aar\407538af9014ea689c286eca83ddfbbf\AndroidManifest.xml:7:5-43
+MERGED from [io.fabric.sdk.android:fabric:1.3.16] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\fabric-1.3.16.aar\cec0dbb562a133217ce875f047c8ef87\AndroidManifest.xml:27:5-43
+MERGED from [io.fabric.sdk.android:fabric:1.3.16] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\fabric-1.3.16.aar\cec0dbb562a133217ce875f047c8ef87\AndroidManifest.xml:27:5-43
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\2432f0c7fe0c0f39d087976f94800183\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\2432f0c7fe0c0f39d087976f94800183\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\c7313c5551daf09dbbe3d4c40aea4dbe\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\c7313c5551daf09dbbe3d4c40aea4dbe\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\4faff0875c5b179ed320fc7d47235973\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\4faff0875c5b179ed320fc7d47235973\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\6af1fd4df387c877f387d55198c6ff4e\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\6af1fd4df387c877f387d55198c6ff4e\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-iid-license:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-iid-license-11.8.0.aar\7fd91a5388c6f8676728ee661cd511b7\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-iid-license:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-iid-license-11.8.0.aar\7fd91a5388c6f8676728ee661cd511b7\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\c0c215e37ed89f359e5385417b075d2b\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\c0c215e37ed89f359e5385417b075d2b\AndroidManifest.xml:4:5-43
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\96299bb90e1981ccb04d4257e7a9558b\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\96299bb90e1981ccb04d4257e7a9558b\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\cf17b80a80df91fb7bfaca8597ef0e3e\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\cf17b80a80df91fb7bfaca8597ef0e3e\AndroidManifest.xml:20:5-44
+INJECTED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml
+INJECTED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml
+		INJECTED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml
+		ADDED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml
+		INJECTED from D:\TCC\TTNMapper\ttnmapper_android_v2\app\src\main\AndroidManifest.xml
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.android.gms:play-services-gcm:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-gcm-11.8.0.aar\274e5547e7674129945abba84855c696\AndroidManifest.xml:23:5-82
+MERGED from [com.google.android.gms:play-services-iid:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-iid-11.8.0.aar\8115b96d4d0020e5a062f17fce05fcfc\AndroidManifest.xml:23:5-82
+MERGED from [com.google.android.gms:play-services-iid:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-iid-11.8.0.aar\8115b96d4d0020e5a062f17fce05fcfc\AndroidManifest.xml:23:5-82
+	android:name
+		ADDED from [com.google.android.gms:play-services-gcm:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-gcm-11.8.0.aar\274e5547e7674129945abba84855c696\AndroidManifest.xml:23:22-79
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\d47fb15f4b44e14aee7e0d4cf867fc97\AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\d47fb15f4b44e14aee7e0d4cf867fc97\AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\d47fb15f4b44e14aee7e0d4cf867fc97\AndroidManifest.xml:28:9-32
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\f5c2f9549997f88496deb61431241ed5\AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\f5c2f9549997f88496deb61431241ed5\AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\f5c2f9549997f88496deb61431241ed5\AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Cesar\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\f5c2f9549997f88496deb61431241ed5\AndroidManifest.xml:24:13-79

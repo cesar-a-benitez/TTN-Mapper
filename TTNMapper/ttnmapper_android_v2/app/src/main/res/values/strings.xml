@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">TTN Mapper V2</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="action_exit">Stop logging</string>
+    <string name="service_connected">TTN Mapper Logging</string>
+
+    <string name="permission_location_rationale">This app needs to know your location to geotag TTN packets.</string>
+    <string name="ok">OK</string>
+    <string name="permissions_not_location">Permissions not granted.</string>
+    <string name="permission_available_location">Location Permission has been granted. This app can now log packets.</string>
+    <string name="permission_file_rationale">We need to be able to write to your phone\'s storage to log the packets to a file.</string>
+    <string name="permission_available_file">Permission to write a file granted.</string>
+    <string name="permissions_not_file">No permission to write a file</string>
+    <string name="ttnmapper_api_upload_packet">https://ttnmapper.org/appapi/upload.php</string>
+    <string name="ttnmapper_api_upload_gateway">https://ttnmapper.org/appapi/update_gateway.php</string>
+    <string name="google_maps_key">AIzaSyCZ2xjDY2TRYEPsW99F2oaccdnhrCxhV14</string>
+    <string name="ttnmapper_tms_url">https://ttnmapper.org/tms/?tile={z}/{x}/{y}</string>
+    <string name="oauth_redirect_url">https://account.thethingsnetwork.org/users/authorize?client_id=ttn-mapper&amp;redirect_uri=/oauth/callback/ttnctl&amp;response_type=code</string>
+
+    <string name="title_activity_terminal">TerminalActivity</string>
+    <string name="oauth_client_id">ttn-mapper</string>
+    <string name="oauth_client_secret">secret</string>
+</resources>

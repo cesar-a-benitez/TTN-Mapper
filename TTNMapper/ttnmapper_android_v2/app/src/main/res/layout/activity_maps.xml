@@ -1,0 +1,193 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.ttnmapper.ttnmapperv2.MapsActivity">
+
+    <fragment
+        android:id="@+id/map"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutStartLogging"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/toggle_background"
+                android:paddingLeft="10dp"
+                android:paddingStart="10dp">
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/switchStartLogging"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mapping"
+                    android:textStyle="bold"
+                    android:theme="@style/SCBSwitch" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:padding="15dp"
+        android:paddingEnd="68dp"
+        android:paddingRight="68dp">
+
+        <TextView
+            android:id="@+id/textViewStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toggle_background"
+            android:padding="5dp"
+            android:text="Startup"
+            android:textColor="#FF000000"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/menuActions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
+        fab:menu_colorNormal="@color/fab_blue_dark"
+        fab:menu_colorPressed="@color/fab_blue_light"
+        fab:menu_fab_size="mini"
+        fab:menu_icon="@drawable/ic_more_vert_white_24dp"
+        fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_left"
+        fab:menu_labels_position="right"
+        fab:menu_labels_showAnimation="@anim/fab_slide_in_from_left">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabItemScreenOn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onToggleScreen"
+            android:src="@drawable/ic_tv_white_24dp"
+            fab:fab_colorNormal="#43A047"
+            fab:fab_colorPressed="#4CAF50"
+            fab:fab_label="Keep screen on"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabItemAutoCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onToggleAutoCenter"
+            android:src="@drawable/ic_center_focus_weak_white_24dp"
+            fab:fab_colorNormal="#D84315"
+            fab:fab_colorPressed="#E64A19"
+            fab:fab_label="Auto center map"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabItemAutoZoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onToggleAutoZoom"
+            android:src="@drawable/ic_search_white_24dp"
+            fab:fab_colorNormal="#43A047"
+            fab:fab_colorPressed="#4CAF50"
+            fab:fab_label="Auto zoom map"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabItemLordrive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onToggleLordrive"
+            android:src="@drawable/gateway_dot_white"
+            fab:fab_colorNormal="#D84315"
+            fab:fab_colorPressed="#E64A19"
+            fab:fab_label="LoRdrive mode"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabItemCoverage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onToggleCoverage"
+            android:src="@drawable/ic_grain_white_24dp"
+            fab:fab_colorNormal="#43A047"
+            fab:fab_colorPressed="#4CAF50"
+            fab:fab_label="Coverage"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabTerminal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onTerminalClicked"
+            android:src="@drawable/ic_terminal"
+            fab:fab_colorNormal="@color/fab_green_dark"
+            fab:fab_colorPressed="@color/fab_green_light"
+            fab:fab_label="Terminal"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabItemSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onSettingsClicked"
+            android:src="@drawable/ic_menu_white_24dp"
+            fab:fab_colorNormal="@color/fab_blue_dark"
+            fab:fab_colorPressed="@color/fab_blue_light"
+            fab:fab_label="Settings"
+            fab:fab_size="mini" />
+
+
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+    <TextView
+        android:id="@+id/textViewCounters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/linearLayoutStartLogging"
+        android:layout_toStartOf="@+id/linearLayoutStartLogging"
+        android:paddingBottom="10dp"
+        android:paddingLeft="68dp"
+        android:text=""
+        android:textColor="#FF000000"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

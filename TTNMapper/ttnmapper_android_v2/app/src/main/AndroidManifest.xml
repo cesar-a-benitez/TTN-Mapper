@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.ttnmapper.ttnmapperv2">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- permissions for mqtt -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Needed only if your app targets Android 5.0 (API level 21) or higher. -->
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <service android:name="org.eclipse.paho.android.service.MqttService"/>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!-- Allow fullscreen on newer extra wide screen devices like the Samsung Galaxy S8 -->
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1" />
+
+        <service
+            android:name=".TTNMapperService"
+            android:exported="false" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="TTN Mapper"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <!-- http://app.ttnmapper.org/?appid=tech-day-la&handler=ttn-handler-us-west&accesskey=ttn-account-v2.YaG7ZktRIgfmDIOk0Ec649IivZasqQNSNlRRDWFAZKY&devid=tdla-1 -->
+            </intent-filter>
+            <intent-filter>
+                <data
+                    android:host="app.ttnmapper.org"
+                    android:scheme="https" />
+                <data
+                    android:host="app.ttnmapper.org"
+                    android:scheme="http" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LinkDevice"
+            android:label="Link Device" />
+        <activity
+            android:name=".LinkDeviceManually"
+            android:label="Manually Link Device" />
+        <activity
+            android:name=".LogInToTTN"
+            android:label="Log in with TTN" />
+        <activity
+            android:name=".ApplicationList"
+            android:label="Choose an application" />
+        <activity
+            android:name=".DevicesList"
+            android:label="Choose a device" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="Settings" />
+        <activity
+            android:name=".CheckPermissions"
+            android:label="Permissions" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="29785e0d8cb576ea183b398f070921d2eca569de" />
+
+        <activity android:name=".TerminalActivity"
+            android:label="Terminal"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"/>
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_DETACHED" />
+            </intent-filter>
+
+            <meta-data android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/device_filter"/>
+
+            <meta-data android:name=
+                "android.hardware.usb.action.USB_DEVICE_DETACHED"
+                android:resource="@xml/device_filter" />
+            
+            
+        </activity>
+    </application>
+
+</manifest>
