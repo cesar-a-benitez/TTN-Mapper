@@ -13,3 +13,5 @@ https://github.com/ttnmapper/ttnmapper_android_v2
 
 Serial library used:
 https://github.com/felHR85/UsbSerial
+
+<img src="MappingSteps.png">
