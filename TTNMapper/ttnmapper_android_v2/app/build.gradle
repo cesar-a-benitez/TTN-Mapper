@@ -14,7 +14,7 @@ android {
     compileSdkVersion 26
     buildToolsVersion '27.0.3'
     defaultConfig {
-        applicationId "com.jpmeijers.ttnmapper"
+        applicationId "com.cesar.ttnmapper"
         minSdkVersion 15
         targetSdkVersion 26
         versionCode 31

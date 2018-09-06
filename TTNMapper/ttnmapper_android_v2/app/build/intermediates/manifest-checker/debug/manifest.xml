@@ -33,7 +33,7 @@
         android:required="true" />
 
     <application
-        android:name="org.ttnmapper.ttnmapperv2.MyApplication"
+        android:name="org.ttnmapper_modified.ttnmapperv2_modified.MyApplication"
         android:allowBackup="true"
         android:debuggable="true"
         android:icon="@mipmap/ic_launcher"
@@ -63,11 +63,11 @@
             android:value="2.1" />
 
         <service
-            android:name="org.ttnmapper.ttnmapperv2.TTNMapperService"
+            android:name="org.ttnmapper_modified.ttnmapperv2_modified.TTNMapperService"
             android:exported="false" />
 
         <activity
-            android:name="org.ttnmapper.ttnmapperv2.MapsActivity"
+            android:name="org.ttnmapper_modified.ttnmapperv2_modified.MapsActivity"
             android:label="TTN Mapper"
             android:launchMode="singleTask" >
             <intent-filter>
@@ -91,34 +91,35 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="org.ttnmapper.ttnmapperv2.LinkDevice"
+            android:name="org.ttnmapper_modified.ttnmapperv2_modified.LinkDevice"
             android:label="Link Device" />
         <activity
-            android:name="org.ttnmapper.ttnmapperv2.LinkDeviceManually"
+            android:name="org.ttnmapper_modified.ttnmapperv2_modified.LinkDeviceManually"
             android:label="Manually Link Device" />
         <activity
-            android:name="org.ttnmapper.ttnmapperv2.LogInToTTN"
+            android:name="org.ttnmapper_modified.ttnmapperv2_modified.LogInToTTN"
             android:label="Log in with TTN" />
         <activity
-            android:name="org.ttnmapper.ttnmapperv2.ApplicationList"
+            android:name="org.ttnmapper_modified.ttnmapperv2_modified.ApplicationList"
             android:label="Choose an application" />
         <activity
-            android:name="org.ttnmapper.ttnmapperv2.DevicesList"
+            android:name="org.ttnmapper_modified.ttnmapperv2_modified.DevicesList"
             android:label="Choose a device" />
         <activity
-            android:name="org.ttnmapper.ttnmapperv2.SettingsActivity"
+            android:name="org.ttnmapper_modified.ttnmapperv2_modified.SettingsActivity"
             android:label="Settings" />
         <activity
-            android:name="org.ttnmapper.ttnmapperv2.CheckPermissions"
+            android:name="org.ttnmapper_modified.ttnmapperv2_modified.CheckPermissions"
             android:label="Permissions" />
 
         <meta-data
             android:name="io.fabric.ApiKey"
-            android:value="29785e0d8cb576ea183b398f070921d2eca569de" />
+            android:value="161fd3572976e514f101faa0fbd5a0d3d2677597" />
 
         <activity
-            android:name="org.ttnmapper.ttnmapperv2.TerminalActivity"
-            android:label="Terminal" >
+            android:name="org.ttnmapper_modified.ttnmapperv2_modified.TerminalActivity"
+            android:label="Terminal"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
             </intent-filter>

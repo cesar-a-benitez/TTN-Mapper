@@ -31,8 +31,9 @@ public class TerminalActivity extends AppCompatActivity {
     private static final String ACTION_USB_PERMISSION = "com.jpmeijers.ttnmapper.USB_PERMISSION";
     private static final String TAG = "TerminalActivity";
     private final String startString = "Please connect a device to continue...";
-    private final String pingMsg = "AT+CMSG=pingtest";
+    private final String pingMsg = "AT+CMSG=ping-";
     private static boolean ping = false;
+    private static boolean GPSMap = false;
     private static long mediumPingTime = 0;
     private static int pingCounter = 0;
     private static int successPing = 0;
@@ -89,6 +90,7 @@ public class TerminalActivity extends AppCompatActivity {
         registerReceiver(mUsbDeviceReceiver, new IntentFilter(
                 UsbManager.ACTION_USB_DEVICE_DETACHED));
 
+        registerGPS();
         registerMqtt();
         connectUsb();
 
@@ -120,6 +122,56 @@ public class TerminalActivity extends AppCompatActivity {
         }
     };
 
+    private BroadcastReceiver mGPSReceiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            String msg = intent.getStringExtra("message");
+            String lat = intent.getStringExtra("lat");
+            String lon = intent.getStringExtra("lon");
+            String alt = intent.getStringExtra("alt");
+            String acc = intent.getStringExtra("acc");
+
+            String dlat = intent.getStringExtra("dlat");
+            String dlon = intent.getStringExtra("dlon");
+            String dalt = intent.getStringExtra("dalt");
+            String dacc = intent.getStringExtra("dacc");
+
+            String toSend = "AT+MSGHEX=" + lat + "FFFF" + lon + "FFFF" + alt + "FFFF" + acc;
+
+
+            Log.d(TAG, "GPSMap: Pos Received");
+
+
+            if (lat != "not accurate enought" && lon != "not accurate enought") {
+                serial.write(toSend.getBytes());
+
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        terminalOut.append("\n--------------------------------------------\n" +
+                                            "GPS Pos:\n\n" +
+                                            "Lat: " + dlat + "Lat(HEX): " + lat +
+                                            "\nLon: " + dlon + "\nLon(HEX): " + lon +
+                                            "\nAlt: " + dalt + "\nAlt(HEX): " + alt +
+                                            "\nAcc: " + dacc + "\nAcc(HEX): " + acc +
+                                            "\n\n" + toSend +
+                                            "\n--------------------------------------------\n\n");
+                    }
+                });
+            }else {
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        terminalOut.append("\n----------------------------------------------------\n" +
+                                            "GPS Pos Received but was not accurate enought (>20m).\nCurrent accuracy: " + dacc +
+                                            "\n----------------------------------------------------\n\n");
+                    }
+                });
+            }
+            Log.d(TAG, "GPSMap: Pos Printed");
+        }
+    };
+
     private void commandHandler() {
         String command = lineCommand.getText().toString();
 
@@ -139,6 +191,47 @@ public class TerminalActivity extends AppCompatActivity {
                 state = 10;
             }else if (command.toUpperCase().equals("PING")) {
                 doPing();
+            }else if (command.toUpperCase().equals("GPSMAP")) {
+                startGPSMap();
+            }else if (command.toUpperCase().equals("STOP")) {
+                GPSMap = false;
+
+                try {
+                    Thread.sleep(500);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }else if (command.toUpperCase().equals("UFSM")) {
+                MyApplication mApplication = (MyApplication)getApplicationContext();
+
+                terminalOut.append("\n\n--------------------------------------------------------------\n" +
+                                       "        Running UFSM Config:\n");
+                mApplication.setTtnApplicationId(UFSM_AppID);
+                terminalOut.append("\nApplicationID = " + UFSM_AppID);
+                mApplication.setTtnDeviceId(UFSM_DevID);
+                terminalOut.append("\nDevID = " + UFSM_DevID);
+                mApplication.setTtnAccessKey(UFSM_AccessKey);
+                terminalOut.append("\nAccessKey = " + UFSM_AccessKey);
+                mApplication.setTtnBroker(UFSM_Broker);
+                terminalOut.append("\nMQTT Broker: " + UFSM_Broker);
+
+                terminalOut.append("\n--------------------------------------------------------------\n\n");
+            }else if (command.toUpperCase().equals("CELTAB")) {
+                MyApplication mApplication = (MyApplication)getApplicationContext();
+
+                terminalOut.append("\n\n--------------------------------------------------------------\n" +
+                                       "        Running CELTAB Config:\n");
+                mApplication.setTtnApplicationId(CELTAB_AppID);
+                terminalOut.append("\nApplicationID = " + CELTAB_AppID);
+                mApplication.setTtnDeviceId(CELTAB_DevID);
+                terminalOut.append("\nDevID = " + CELTAB_DevID);
+                mApplication.setTtnAccessKey(CELTAB_AccessKey);
+                terminalOut.append("\nAccessKey = " + CELTAB_AccessKey);
+                mApplication.setTtnBroker(CELTAB_Broker);
+                terminalOut.append("\nMQTT Broker: " + CELTAB_Broker);
+
+                terminalOut.append("\n--------------------------------------------------------------\n\n");
             }else {
                 serial.write(command.getBytes());
             }
@@ -177,16 +270,48 @@ public class TerminalActivity extends AppCompatActivity {
         lineCommand.setText("");
     }
 
+    private void startGPSMap() {
+        GPSMap = true;
+        terminalOut.append("\n--------------------------------\n" +
+                "GPS Mapping Started\n--------------------------------\n\n");
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                while (GPSMap) {
+                    GPSReq();
+                }
+            }
+        }).start();
+    }
+
+    private void GPSReq() {
+        Intent intent = new Intent("ttn-mapper-gpsreq-service");
+        intent.putExtra("message", "notification");
+
+        LocalBroadcastManager.getInstance(this).sendBroadcast(intent);
+        Log.d(TAG, "GPSMap: Pos Req");
+
+        try {
+          //  Log.d(TAG, "GPSMap: Sleep");
+            Thread.sleep(5000);
+          //  Log.d(TAG, "GPSMap: Wake");
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
     private void doPing() {
         if (pingCounter == 0) {
             ping = true;
             lineCommand.setEnabled(false);
             btnSend.setEnabled(false);
             startTime = System.currentTimeMillis();
+            String test = pingMsg + pingCounter;
             terminalOut.append("\n\n---------------------------------------------------------------\n" +
                                    "                       Starting Ping:\n" +
-                               "\nSending Message: " + pingMsg + "\n");
-            serial.write(pingMsg.getBytes());
+                               "\nSending Message: " + test + "\n");
+            serial.write(test.getBytes());
             pingCounter++;
         }else if (pingCounter < defaultPingCnt) {
             try {
@@ -195,8 +320,9 @@ public class TerminalActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
             startTime = System.currentTimeMillis();
-            terminalOut.append("\n-------------------------------------------\nSending Message: " + pingMsg + "\n");
-            serial.write(pingMsg.getBytes());
+            String test = pingMsg + pingCounter;
+            terminalOut.append("\n-------------------------------------------\nSending Message: " + test + "\n");
+            serial.write(test.getBytes());
             pingCounter++;
         }else {
             ping = false;
@@ -453,6 +579,14 @@ public class TerminalActivity extends AppCompatActivity {
 
     private void unRegisterMqtt() {
         LocalBroadcastManager.getInstance(this).unregisterReceiver(mMessageReceiver);
+    }
+
+    private void registerGPS () {
+        LocalBroadcastManager.getInstance(this).registerReceiver(mGPSReceiver, new IntentFilter("ttn-mapper-gpspos-event"));
+    }
+
+    private void unRegisterGPS() {
+        LocalBroadcastManager.getInstance(this).unregisterReceiver(mGPSReceiver);
     }
 
 

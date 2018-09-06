@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\TCC\\TTNMapper\\ttnmapper_android_v2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
+            "outputFile": "D:\\TCC\\SourceCodes\\TTN-Mapper-master\\TTNMapper\\ttnmapper_android_v2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Cesar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\73012fcbb95bcd557d9b549f8d39167b\\res\\values-land\\values-land.xml",
+                    "source": "C:\\Users\\cesar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\57b9f7071eec99be65d7ab2bf5cb1d5f\\res\\values-land\\values-land.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Cesar\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.0.aar\\1ad750f32f145a96facbb6fc8416290b\\res\\values-land\\values-land.xml",
+                    "source": "C:\\Users\\cesar\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.0.aar\\c0d949cbf1ec8f182827606b1a1eae12\\res\\values-land\\values-land.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\TCC\\TTNMapper\\ttnmapper_android_v2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rIN\\values-en-rIN.xml",
+            "outputFile": "D:\\TCC\\SourceCodes\\TTN-Mapper-master\\TTNMapper\\ttnmapper_android_v2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rIN\\values-en-rIN.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Cesar\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.0.aar\\8dcfba7d0089d91844a4fa5e5f03d8cd\\res\\values-en-rIN\\values-en-rIN.xml",
+                    "source": "C:\\Users\\cesar\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.0.aar\\f7924c4df54f5e4f0a4cd99bbf71be02\\res\\values-en-rIN\\values-en-rIN.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Cesar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\73012fcbb95bcd557d9b549f8d39167b\\res\\values-en-rIN\\values-en-rIN.xml",
+                    "source": "C:\\Users\\cesar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\57b9f7071eec99be65d7ab2bf5cb1d5f\\res\\values-en-rIN\\values-en-rIN.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

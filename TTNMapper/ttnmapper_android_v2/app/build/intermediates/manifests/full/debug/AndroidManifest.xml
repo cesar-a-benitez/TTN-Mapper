@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.jpmeijers.ttnmapper"
+    package="com.cesar.ttnmapper"
     android:versionCode="31"
     android:versionName="2018.03.21" >
 
@@ -114,7 +114,7 @@
 
         <meta-data
             android:name="io.fabric.ApiKey"
-            android:value="29785e0d8cb576ea183b398f070921d2eca569de" />
+            android:value="161fd3572976e514f101faa0fbd5a0d3d2677597" />
 
         <activity
             android:name="org.ttnmapper.ttnmapperv2.TerminalActivity"
