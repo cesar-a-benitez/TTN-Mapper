@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\TCC\\SourceCodes\\TTN-Mapper-master\\TTNMapper\\ttnmapper_android_v2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+            "outputFile": "D:\\GIT\\TTN-Mapper\\TTNMapper\\ttnmapper_android_v2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
             "map": [
                 {
                     "source": "C:\\Users\\cesar\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.0.aar\\c0d949cbf1ec8f182827606b1a1eae12\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",

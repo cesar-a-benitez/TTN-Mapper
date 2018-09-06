@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\TCC\\SourceCodes\\TTN-Mapper-master\\TTNMapper\\ttnmapper_android_v2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-lt\\values-lt.xml",
+            "outputFile": "D:\\GIT\\TTN-Mapper\\TTNMapper\\ttnmapper_android_v2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-lt\\values-lt.xml",
             "map": [
                 {
                     "source": "C:\\Users\\cesar\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.8.0.aar\\d8e152af687f20413d4fbfa13a9ac2b1\\res\\values-lt\\values.xml",
