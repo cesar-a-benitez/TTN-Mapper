@@ -10,6 +10,9 @@ import android.content.IntentFilter;
 import android.hardware.usb.UsbDevice;
 import android.hardware.usb.UsbDeviceConnection;
 import android.hardware.usb.UsbManager;
+import android.os.Build;
+import android.os.VibrationEffect;
+import android.os.Vibrator;
 import android.support.v4.content.LocalBroadcastManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -23,9 +26,6 @@ import android.widget.Toast;
 
 import com.felhr.usbserial.UsbSerialDevice;
 import com.felhr.usbserial.UsbSerialInterface;
-
-import java.io.UnsupportedEncodingException;
-import java.util.Map;
 
 import java.io.UnsupportedEncodingException;
 import java.util.Map;
@@ -117,6 +117,8 @@ public class TerminalActivity extends AppCompatActivity {
         registerMqtt();
         connectUsb();
 
+        LocalBroadcastManager.getInstance(this).registerReceiver(GPSService, new IntentFilter("ttn-mapper-gpsservice-answer"));
+
         btnSend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -149,74 +151,132 @@ public class TerminalActivity extends AppCompatActivity {
     };
 
     /**
+     *  (en) On GPSService Broadcast Received
+     */
+    private BroadcastReceiver GPSService = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            String status = intent.getStringExtra("stats");
+
+            if (status.equals("true")) {
+                GPSReq();
+            }else {
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        terminalOut.append("\n--------------------------------------------------------------------\n" +
+                                             "Logging service not running, try to restart it." +
+                                             "\n--------------------------------------------------------------------\n");
+                        vibrateNotify();
+                    }
+                });
+
+                stop();
+            }
+        }
+    };
+
+    /**
+     *  (en) Emits a vibration notification
+     *
+     *  (pt) Emite uma notificação de vibração
+     */
+    private void vibrateNotify() {
+        if (Build.VERSION.SDK_INT >= 26) {
+            ((Vibrator) getSystemService(VIBRATOR_SERVICE)).vibrate(VibrationEffect.createOneShot(300,VibrationEffect.DEFAULT_AMPLITUDE));
+        } else {
+            ((Vibrator) getSystemService(VIBRATOR_SERVICE)).vibrate(300);
+        }
+    }
+
+    /**
      *  (en) On mGPSReceiver Broadcast Received
      */
     private BroadcastReceiver mGPSReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
-            /**
-             *  (en) Get Data from Strings sended by intent
-             *
-             *  (pt) Adquirir dados da String enviada por intent
-             */
             String msg = intent.getStringExtra("message");
-            String lat = intent.getStringExtra("lat");
-            String lon = intent.getStringExtra("lon");
-            String alt = intent.getStringExtra("alt");
-            String acc = intent.getStringExtra("acc");
 
-            String dlat = intent.getStringExtra("dlat");
-            String dlon = intent.getStringExtra("dlon");
-            String dalt = intent.getStringExtra("dalt");
-            String dacc = intent.getStringExtra("dacc");
+            if (msg.equals("selfstop")) {
+                String reason = intent.getStringExtra("payload");
 
-            String toSend = "AT+MSGHEX=" + lat + lon + alt + acc;
+                stop();
 
-            Log.d(TAG, "GPSMap: Pos Received");
-            Log.d(TAG, "GPSMap: Pos encoded: " + toSend);
-
-            /**
-             *  (en) Verifying if the Accuracy is in a desirable value
-             *
-             *  (pt) Verificando se a Precisão está em um valor desejável
-             */
-            if (lat != "not accurate enought" && lon != "not accurate enought") {
-
-                try {
-                    serial.write(toSend.getBytes());
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-
-                runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        terminalOut.append("\n--------------------------------------------\n" +
-                                            "GPS Pos:\n\n" +
-                                            "Lat: " + dlat + "\nLat(HEX): " + lat +
-                                            "\nLon: " + dlon + "\nLon(HEX): " + lon +
-                                            "\nAlt: " + dalt + "\nAlt(HEX): " + alt +
-                                            "\nAcc: " + dacc + "\nAcc(HEX): " + acc +
-                                            "\n\n" + toSend +
-                                            "\n--------------------------------------------\n\n");
-                    }
-                });
-            }else {
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
                         terminalOut.append("\n----------------------------------------------------\n" +
-                                            "GPS Pos Received but was not accurate enought (>20m).\nCurrent accuracy: " + dacc +
-                                            "\n----------------------------------------------------\n\n");
+                                             "                  GPSMap Error:\n" + reason +
+                                           "\n----------------------------------------------------\n\n");
                     }
                 });
+            } else {
+                String lat = intent.getStringExtra("lat");
+                String lon = intent.getStringExtra("lon");
+                String alt = intent.getStringExtra("alt");
+                String acc = intent.getStringExtra("acc");
+
+                String dlat = intent.getStringExtra("dlat");
+                String dlon = intent.getStringExtra("dlon");
+                String dalt = intent.getStringExtra("dalt");
+                String dacc = intent.getStringExtra("dacc");
+
+                String toSend = "AT+MSGHEX=" + lat + lon + alt + acc;
+
+
+                Log.d(TAG, "GPSMap: Pos Received");
+                Log.d(TAG, "GPSMap: Pos encoded: " + toSend);
+
+                if (lat != "not accurate enought" && lon != "not accurate enought") {
+
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            terminalOut.append("\n--------------------------------------------\n" +
+                                    "GPS Pos:\n" +
+                                    "\nLat: " + dlat + "\nLat(HEX): " + lat +
+                                    "\nLon: " + dlon + "\nLon(HEX): " + lon +
+                                    "\nAlt: " + dalt + "\nAlt(HEX): " + alt +
+                                    "\nAcc: " + dacc + "\nAcc(HEX): " + acc +
+                                    "\n\n" + toSend +
+                                    "\n--------------------------------------------\n\n");
+                        }
+                    });
+
+                    try {
+                        serial.write(toSend.getBytes());
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                        runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                terminalOut.append("\n---------------------------------------------------------------------------\n" +
+                                                    "                                Error:" +
+                                                    "\nError while trying to send serial command.\n" +
+                                                    "Please make sure that the device is connected." +
+                                                    "\n---------------------------------------------------------------------------\n\n");
+                            }
+                        });
+                    }
+                } else {
+                    float tAcc = Float.parseFloat(dacc);
+                    String temp = String.format("%.02f", tAcc);
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            terminalOut.append("\n----------------------------------------------------\n" +
+                                    "GPS Pos Received but was not accurate enought (>20m).\n" +
+                                    "Current accuracy: " + temp +
+                                    "\n----------------------------------------------------\n\n");
+                        }
+                    });
+                }
+                Log.d(TAG, "GPSMap: Pos Printed");
             }
-            Log.d(TAG, "GPSMap: Pos Printed");
         }
     };
 
-    /**
-     *  (en) commandHandler function is meant to interpret
+     /*  (en) commandHandler function is meant to interpret
      *       the user input and decide wich function to call
      *
      *  (pt) A função commandHandler destina-se a interpretar
@@ -327,19 +387,39 @@ public class TerminalActivity extends AppCompatActivity {
     /**
      *  (en) GPSMap Function
      */
-    private void startGPSMap() {
+   private void startGPSMap() {
         GPSMap = true;
-        terminalOut.append("\n--------------------------------\n" +
-                "GPS Mapping Started\n--------------------------------\n\n");
+        terminalOut.append("\n-----------------------------------\n" +
+                "GPS Mapping Started\n-----------------------------------\n\n");
 
         new Thread(new Runnable() {
             @Override
             public void run() {
                 while (GPSMap) {
-                    GPSReq();
+                   GPSServiceVer();
+
+                    try {
+                        //  Log.d(TAG, "GPSMap: Sleep");
+                        Thread.sleep(5000);
+                        //  Log.d(TAG, "GPSMap: Wake");
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
                 }
             }
         }).start();
+    }
+
+    /**
+     *  (en) Request the GPS Service Status
+     *
+     *  (pt) Requisita o Status do Serviço de GPS
+     */
+    private void GPSServiceVer() {
+        Intent intent = new Intent("ttn-mapper-gpsservice-event");
+        intent.putExtra("message", "statsrequest");
+
+        LocalBroadcastManager.getInstance(this).sendBroadcast(intent);
     }
 
     /**
@@ -364,18 +444,10 @@ public class TerminalActivity extends AppCompatActivity {
      */
     private void GPSReq() {
         Intent intent = new Intent("ttn-mapper-gpsreq-service");
-        intent.putExtra("message", "notification");
+        intent.putExtra("message", "posrequest");
 
         LocalBroadcastManager.getInstance(this).sendBroadcast(intent);
         Log.d(TAG, "GPSMap: Pos Req");
-
-        try {
-          //  Log.d(TAG, "GPSMap: Sleep");
-            Thread.sleep(5000);
-          //  Log.d(TAG, "GPSMap: Wake");
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
     }
 
     /**
