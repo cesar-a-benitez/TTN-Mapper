@@ -30,7 +30,6 @@ import com.felhr.usbserial.UsbSerialInterface;
 import java.io.UnsupportedEncodingException;
 import java.util.Map;
 
-
 public class TerminalActivity extends AppCompatActivity {
 
     /**
@@ -76,7 +75,6 @@ public class TerminalActivity extends AppCompatActivity {
     private final String UFSM_AccessKey = AccessKeyString;
     private final String UFSM_Broker    = BrokerString;
 
-
     PendingIntent mPermissionIntent;
 
     UsbDevice deviceFound = null;
@@ -91,10 +89,9 @@ public class TerminalActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_terminal);
-
+        
         terminalOut = (TextView) findViewById(R.id.terminalOutput);
         lineCommand = (EditText) findViewById(R.id.commandLine);
-
         btnSend = (Button) findViewById(R.id.sendBtn);
 
         terminalOut.setMovementMethod(new ScrollingMovementMethod());
@@ -183,9 +180,9 @@ public class TerminalActivity extends AppCompatActivity {
      */
     private void vibrateNotify() {
         if (Build.VERSION.SDK_INT >= 26) {
-            ((Vibrator) getSystemService(VIBRATOR_SERVICE)).vibrate(VibrationEffect.createOneShot(300,VibrationEffect.DEFAULT_AMPLITUDE));
+            ((Vibrator) getSystemService(VIBRATOR_SERVICE)).vibrate(VibrationEffect.createOneShot(400,VibrationEffect.DEFAULT_AMPLITUDE));
         } else {
-            ((Vibrator) getSystemService(VIBRATOR_SERVICE)).vibrate(300);
+            ((Vibrator) getSystemService(VIBRATOR_SERVICE)).vibrate(400);
         }
     }
 
@@ -583,7 +580,6 @@ public class TerminalActivity extends AppCompatActivity {
      *       parâmetros desejados, comando, número de vezes e intervalo
      */
     private void loopSend() {
-        //lineCommand.setFocusable(false);
         lineCommand.setEnabled(false);
         btnSend.setEnabled(false);
 
@@ -650,7 +646,7 @@ public class TerminalActivity extends AppCompatActivity {
                         e.printStackTrace();
                     }
                 }
-                //serial.write(loopCommand.getBytes());
+                
                 try {
                     Thread.sleep(500);
                 } catch (InterruptedException e) {
@@ -778,8 +774,6 @@ public class TerminalActivity extends AppCompatActivity {
     }
 
     private void releaseUsb(){
-       // Toast.makeText(getApplicationContext(), "releaseUsb", Toast.LENGTH_SHORT).show();
-
         if (serial != null) {
             serial.close();
             if (loop) {

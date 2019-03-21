@@ -178,6 +178,8 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         Intent intent = getIntent();
         final Uri data = intent.getData();
 
+        LocalBroadcastManager.getInstance(this).registerReceiver(GPSStatsReq, new IntentFilter("ttn-mapper-gpsservice-event"));
+
 
         /*
          * First check if google play services are available for location and maps
@@ -358,6 +360,23 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
             unbindService(mConnection);
             mBound = false;
         }
+    }
+
+    private BroadcastReceiver GPSStatsReq = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            GPSStatsVer();
+        }
+    };
+
+    private void GPSStatsVer() {
+        Intent serviceStats = new Intent("ttn-mapper-gpsservice-answer");
+        if(isMyServiceRunning(TTNMapperService.class)){
+            serviceStats.putExtra("stats", "true");
+        }else {
+            serviceStats.putExtra("stats", "false");
+        }
+        LocalBroadcastManager.getInstance(this).sendBroadcast(serviceStats);
     }
 
     //toggle button to start/stop logging

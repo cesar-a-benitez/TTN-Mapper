@@ -93,6 +93,7 @@ public class TTNMapperService extends Service implements GoogleApiClient.Connect
         }
 
         mGoogleApiClient.connect();
+        LocalBroadcastManager.getInstance(this).registerReceiver(mGPSReq, new IntentFilter("ttn-mapper-gpsreq-service"));
     }
 
     @Override
@@ -104,6 +105,106 @@ public class TTNMapperService extends Service implements GoogleApiClient.Connect
         mGoogleApiClient.disconnect();
 
         mqtt_disconnect();
+    }
+
+    private BroadcastReceiver mGPSReq = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            GPSPosReq();
+        }
+    };
+
+    private void GPSPosReq() {
+        //String msg = intent.getStringExtra("message");
+
+        try {
+            Intent gpsIntent = new Intent("ttn-mapper-gpspos-event");
+            MyApplication myApplication = (MyApplication) getApplicationContext();
+            Log.d(TAG, "GPSMap: Req Received");
+            //add data
+            gpsIntent.putExtra("message", "notification");
+
+            if(myApplication.getLatestAcc() < 20 && myApplication.getLatestLat() !=0 && myApplication.getLatestLon() !=0) {
+                Log.v(TAG,"---------------------------------------------\n" +
+                        "Location:\nLat: " + myApplication.getLatestLat() + "\nLon: " + myApplication.getLatestLon() +
+                        "---------------------------------------------\n");
+
+                String lat = coordinateToHex(myApplication.getLatestLat());
+                String lon = coordinateToHex(myApplication.getLatestLon());
+                String alt = coordinateToHexUn(myApplication.getLatestAlt()/10);
+                String acc = coordinateToHexUn(myApplication.getLatestAcc());
+
+                gpsIntent.putExtra("lat", lat);
+                gpsIntent.putExtra("dlat", Double.toString(myApplication.getLatestLat()));
+                gpsIntent.putExtra("lon", lon);
+                gpsIntent.putExtra("dlon", Double.toString(myApplication.getLatestLon()));
+                gpsIntent.putExtra("alt", alt);
+                gpsIntent.putExtra("dalt", Double.toString(myApplication.getLatestAlt()));
+                gpsIntent.putExtra("acc", acc);
+                gpsIntent.putExtra("dacc", Double.toString(myApplication.getLatestAcc()));
+                Log.d(TAG, "GPSMap: GPS Send");
+            }else {
+                gpsIntent.putExtra("lat", "not accurate enought");                gpsIntent.putExtra("lon", "not accurate enought");
+                gpsIntent.putExtra("alt", "not accurate enought");
+                gpsIntent.putExtra("acc", "not accurate enought");
+                gpsIntent.putExtra("dacc", Double.toString(myApplication.getLatestAcc()));
+            }
+
+            LocalBroadcastManager.getInstance(this).sendBroadcast(gpsIntent);
+            Log.d(TAG, "\n---------------------------------------------\n" +
+                    "              Send GPS:\n\nLat: " +  myApplication.getLatestLat() +
+                    "\nLon: "+ myApplication.getLatestLon() +
+                    "\nAlt: "+ myApplication.getLatestAlt() +
+                    "\nAcc: "+ myApplication.getLatestAcc() +    "\n---------------------------------------------");
+        } catch (Exception e) {
+            e.printStackTrace();
+            Log.e(TAG, "\n----------------------------------------------------------\nError: " + e.toString());
+        }
+    }
+
+    private String coordinateToHex(double in) {
+        String out = "";
+        in = in * Math.pow(10, 7);
+        int abs = (int) in;
+        if (abs < 0) {
+            abs = Math.abs(abs);
+            out = Integer.toString(abs, 16);
+            if(out.length() > 8) {
+                Log.d(TAG, "Coordinates Error: Hex String > 8 bytes.");
+            }
+            while (out.length() < 8) {
+                out = "0" + out;
+            }
+
+            out = "FF" + out;
+
+        }else {
+            out = Integer.toString(abs, 16);
+            if(out.length() > 8) {
+                Log.d(TAG, "Coordinates Error: Hex String > 8 bytes.");
+            }
+            while (out.length() < 8) {
+                out = "0" + out;
+            }
+
+            out = "00" + out;
+        }
+        return out;
+    }
+
+    private String coordinateToHexUn(double in) {
+        String out = "";
+        in = in * Math.pow(10, 7);
+        int abs = (int) in;
+        out = Integer.toString(abs, 16);
+        if(out.length() > 8) {
+            Log.d(TAG, "Coordinates Error: Hex String > 8 bytes.");
+        }
+        while (out.length() < 8) {
+            out = "0" + out;
+        }
+
+        return out;
     }
 
     @Override

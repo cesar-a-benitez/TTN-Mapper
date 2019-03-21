@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.felHR85:UsbSerial:6.0.4@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/UsbSerial-6.0.4.aar/fac6e1966a9a7fc825d60778c8a7c8e5/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/UsbSerial-6.0.4.aar/fac6e1966a9a7fc825d60778c8a7c8e5/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.felHR85/UsbSerial/6.0.4/dae8d8664329020e356edfe7f8617e5141a9d431/UsbSerial-6.0.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
